@@ -73,7 +73,6 @@ header .container {
   color: #2e2f42;
   display: flex;
   gap: 40px;
-  padding: 24px 0;
 }
 .li-nav {
   color: #2e2f42;
@@ -84,6 +83,12 @@ header .container {
 .li-nav:focus {
   color: #404bbf;
 }
+
+.text-nav {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .address {
   font-weight: 400;
   font-size: 16px;
@@ -124,7 +129,16 @@ h1 {
 }
 
 .visually-hidden {
-  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .button {
   font-family: "Roboto", sans-serif;
