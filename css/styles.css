@@ -41,7 +41,7 @@ header {
 header .container {
   display: flex;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 24px 15px;
 }
 
 .nav-logo {
@@ -84,7 +84,11 @@ header .container {
   color: #404bbf;
 }
 
-.text-nav {
+.nav .li-nav {
+  padding: 24px 0;
+}
+
+.ul-address a {
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -117,7 +121,16 @@ header .container {
 .text-button {
   background-color: #2e2f42;
   padding: 188px 0;
+  align-items: center;
 }
+
+.text-button .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 h1 {
   font-weight: 700;
   font-size: 56px;
@@ -126,6 +139,7 @@ h1 {
   text-align: center;
   color: #fff;
   max-width: 496px;
+  padding-bottom: 48px;
 }
 
 .visually-hidden {
